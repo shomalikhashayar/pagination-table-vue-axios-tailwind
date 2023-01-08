@@ -83,6 +83,51 @@
         </div>
       </div>
     </div>
+    <div id="pagination">
+      <div class="flex justify-center">
+        <nav aria-label="Page navigation example">
+          <ul class="flex list-style-none">
+            <li class="page-item disabled">
+              <a
+                class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded-full text-gray-500 pointer-events-none focus:shadow-none"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Previous</a
+              >
+            </li>
+            <li class="page-item active">
+              <a
+                class="page-link relative block py-1.5 px-3 border-0 bg-zinc-500 outline-none transition-all duration-300 rounded-full text-white hover:text-white hover:bg-black shadow-md focus:shadow-md"
+                href="#"
+                >1 (current)<span class="visually-hidden"></span
+              ></a>
+            </li>
+            <li class="page-item">
+              <a
+                class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded-full text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+                href="#"
+                >2</a
+              >
+            </li>
+            <li class="page-item">
+              <a
+                class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded-full text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+                href="#"
+                >3</a
+              >
+            </li>
+            <li class="page-item">
+              <a
+                class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded-full text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+                href="#"
+                >Next</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -116,6 +161,8 @@ export default {
 body {
   overflow-x: hidden;
   background-color: rgb(254, 254, 254);
+  padding-left: 20px;
+  padding-right: 20px;
 }
 td {
   background-color: white;
@@ -129,5 +176,12 @@ td {
 }
 #avatar {
   margin: 0 auto;
+}
+img {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+#pagination {
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 </style>
