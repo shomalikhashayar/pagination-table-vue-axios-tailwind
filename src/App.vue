@@ -87,6 +87,8 @@
 </template>
 
 <script>
+import axios from "axios";
+
 //API => https://reqres.in/api/users?page=1"
 
 const url = "https://reqres.in/api/users?page=1";
